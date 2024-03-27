@@ -16,7 +16,7 @@ interface IERC20 {
 contract LiaoToken is IERC20 {
     // TODO: you might need to declare several state variable here
     mapping(address account => uint256) private _balances;
-    mapping (address => mapping(address => uint256)) private _allowances;
+    mapping(address => mapping(address => uint256)) private _allowances;
     mapping(address account => bool) isClaim;
 
     uint256 private _totalSupply;
